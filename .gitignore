@@ -35,3 +35,20 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Logs ###
+*.log
+
+### Local environment files ###
+.env
+
+### macOS ###
+.DS_Store
+
+### Gradle ###
+.gradle
+**/build/
+!src/**/build/
+
+### Gradle Wrapper ###
+!gradle-wrapper.jar
