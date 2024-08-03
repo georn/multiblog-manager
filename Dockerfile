@@ -10,5 +10,5 @@ COPY multi-blog-service-0.0.1-SNAPSHOT.jar app.jar
 # Expose the port the app runs on
 EXPOSE 8080
 
-# Run the jar file with cloud profile
-CMD ["java", "-jar", "-Dspring.profiles.active=cloud", "app.jar"]
+# Run the jar file
+CMD ["java", "-Xmx300m", "-Xms300m", "-jar", "-Dspring.profiles.active=cloud", "-Dserver.address=0.0.0.0", "-Dserver.port=8080", "app.jar"]
